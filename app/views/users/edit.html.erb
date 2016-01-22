@@ -28,6 +28,11 @@
           <%= f.text_field :location, placeholder: 'Location', class: 'form-control' %>
         </div>
         
+        <div class="form-group">
+          <%= f.label :school %>
+          <%= f.select :school, noptions_for_seasons, class: 'form-control' %>
+        </div>
+
 
         <div class="form-group">
           <%= f.label :birthday %>

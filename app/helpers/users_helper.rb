@@ -7,6 +7,10 @@ module UsersHelper
     [['Male', 'male'], ['Female', 'female']]
   end
 
+  def noptions_for_seasons
+    [['5o gimnasio'], ['3o gimnasio']]
+  end
+
   def age(dob)
     now = Time.now.utc.to_date
     now.year - dob.year - (dob.to_date.change(:year => now.year) > now ? 1 : 0)

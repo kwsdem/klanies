@@ -13,6 +13,13 @@
       <%= "#{pluralize(age(@user.birthday), 'year')} old" %>
     </h5>
   <% end %>
+
+  <% if @user.school.present? %>
+    <h5>
+      <%= fa_icon 'graduation-cap' %>
+      <%= pluralize(@user.school, '') %>
+    </h5>
+  <% end %>
   <% if @user.url.present? %>
       <h5>
 
