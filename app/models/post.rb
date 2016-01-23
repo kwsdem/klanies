@@ -7,7 +7,6 @@ class Post < ActiveRecord::Base
 
   belongs_to :user
   counter_culture :user
-  acts_as_votable
   has_many :votes, :as => :votable, :dependent => :destroy
   has_many :comments, :as => :commentable, :dependent => :destroy
 
