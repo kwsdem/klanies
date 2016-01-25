@@ -20,7 +20,8 @@ class User < ActiveRecord::Base
   def mailboxer_email(object)
     self.email
   end
-
+  
+  has_many :votes, dependent: :destroy
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy 
   has_many :events, dependent: :destroy 
