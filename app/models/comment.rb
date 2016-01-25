@@ -22,6 +22,4 @@ class Comment < ActiveRecord::Base
   validates_presence_of :comment
   validates_presence_of :commentable
   validates_presence_of :user
-
-
 end

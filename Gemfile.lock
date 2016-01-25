@@ -245,7 +245,7 @@ PLATFORMS
 DEPENDENCIES
   acts_as_commentable
   acts_as_follower
-  acts_as_votable (~> 0.10.0)
+  acts_as_votable
   autoprefixer-rails
   better_errors
   bootstrap-sass (~> 3.2.0.2)
